@@ -1,0 +1,31 @@
+.Step1-container{
+    position: relative;
+
+
+    .triangle-svg{
+        width:40vw;
+        max-width: 345px;
+        min-width: 230px;
+    }
+    
+    .rock,.scissors,.paper{
+        position: absolute;
+        width:20vw;
+        max-width: 173px;
+        min-width: 115px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+    }
+    .rock{
+        bottom: 0;
+        left:50%;
+        transform: translate(-50%);
+    }
+    .paper{
+        transform: translate(-25%,-25%);
+    }
+    .scissors{
+        right: 0;
+        transform: translate(25%,-25%);
+    }
+}

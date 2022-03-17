@@ -1,0 +1,22 @@
+.rules-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    max-width: 450px;
+    background: gray;
+    
+    @media screen and (min-width : 768px){
+        .rules-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 85%;
+        }
+        &{
+            height: 450px;
+        }
+    }
+}

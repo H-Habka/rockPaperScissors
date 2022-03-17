@@ -1,0 +1,23 @@
+.LoseOrWin-section{
+    width: 200px;
+
+
+    .LoseOrWin-title{
+        font-size: 3rem;
+        color: #fff;
+        letter-spacing: 0.1rem;
+    }
+
+    .LoseOrWin-button{
+        padding: 13px;
+        width: 100%;
+        margin-top: 20px;
+        font-size:1rem;
+        border-radius: 0.5rem;
+        border: none;
+        letter-spacing: 0.05rem;
+        font-weight: 600;
+        color:rgba(8, 8, 59, 0.767);
+
+    }
+}

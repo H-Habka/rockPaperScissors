@@ -1,0 +1,51 @@
+.Step2-container{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    max-width: 876px;
+
+    .circle{
+        width:20vw;
+        max-width: 173px;
+        min-width: 115px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: hsla(232, 44%, 13%, 0.514);
+        position: relative;
+
+        &.congrats{
+            &::after{
+                position: absolute;
+                content: '';
+                width: 130%;
+                height: 130%;
+                border-radius: 50%;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(200, 200, 200, 0.1);
+                border: 20px solid rgba(155, 155, 155, 0.02);
+                outline: 30px solid rgba(155, 155, 155, 0.1);
+            }
+        }
+
+        &::before{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: -40px;
+            width: max-content;
+            color: #fff;
+
+            @media screen and(min-width:768px) {
+                top: -50px;
+            }
+        }
+        &:first-of-type::before{
+            content:'YOU PICKED';
+        }
+        &:last-of-type::before{
+            content:'THE HOUSE PICKED';
+        }
+    }
+}
