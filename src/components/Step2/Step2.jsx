@@ -26,9 +26,20 @@ const Step2 = ({ myChoice, setMyChoice, changeTheScore }) => {
 
   // },[])
   useEffect(() => {
-    if (myChoice === 'paper')setTimeout(() => setComputerChoice('scissors'), 1000)
-    if (myChoice === 'scissors')setTimeout(() => setComputerChoice('rock'), 1000)
-    if (myChoice === 'rock')setTimeout(() => setComputerChoice('paper'), 1000)
+    if (myChoice === 'paper')setTimeout(() => {
+      let test = ['scissors', 'paper']
+      setComputerChoice(test[Math.floor(2 * Math.random())])
+    }, 1000)
+
+    if (myChoice === 'scissors')setTimeout(() => {
+      let test = ['scissors', 'rock']
+      setComputerChoice(test[Math.floor(2 * Math.random())])
+    }, 1000)
+    
+    if (myChoice === 'rock')setTimeout(() => {
+      let test = ['paper', 'rock']
+      setComputerChoice(test[Math.floor(2 * Math.random())])
+    }, 1000)
   }, [])
 
   useEffect(() => {
