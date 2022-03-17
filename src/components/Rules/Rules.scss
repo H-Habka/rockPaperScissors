@@ -1,4 +1,8 @@
 .rules-container{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -6,9 +10,9 @@
     width: 100vw;
     height: 100vh;
     max-width: 450px;
-    background: gray;
+    background: #fff;
     
-    @media screen and (min-width : 768px){
+    @media screen and (min-width : 450px){
         .rules-title{
             display: flex;
             align-items: center;
@@ -19,4 +23,7 @@
             height: 450px;
         }
     }
+}
+.close-icon{
+    cursor: pointer;
 }
